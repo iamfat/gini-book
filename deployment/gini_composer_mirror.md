@@ -9,6 +9,7 @@ Generating Composer configuration file...
 $ composer install
 ```
 ## Packagist.org is SO SLOW IN CHINA!!!
+We setup `gini-satis.genee.cn` for composer packages included in our `gini` modules so everyone in China could access them quickly.
 ```
 $ gini composer init --no-packagist
 Generating Composer configuration file...
