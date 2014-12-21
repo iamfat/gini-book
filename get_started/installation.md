@@ -3,7 +3,7 @@
 ```bash
 mkdir $HOME/gini-modules
 cd $HOME/gini-modules
-git clone git@github.com:iamfat/gini
+git clone https://github.com/iamfat/gini.git
 ```
 
 ### Server Requirements
@@ -22,6 +22,7 @@ export PATH=$HOME/gini-modules/gini/bin:$PATH
 1. You'd better make a `phar` build before
 ```bash
 $ cd `gini root`
+$ composer update
 $ gini build
 $ tree -L 1 build
 build
