@@ -27,6 +27,6 @@ gini web update
 
 **STEP 4:** Update web directory and start a PHP development server
 ```bash
-gini preview <host:port>    # default is localhost:3000
+gini web preview <host:port>    # default is localhost:3000
 ```
 **STEP 5:** Run it from your browser by accessing `http://localhost:3000/hello/world`!
