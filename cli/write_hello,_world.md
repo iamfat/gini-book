@@ -6,7 +6,7 @@
 
 namespace Gini\Controller\CLI;
 
-class Hello extends \Gini\Controller\CGI {
+class Hello extends \Gini\Controller\CLI {
 
     function actionWorld() {
         echo "Hello, world!\n";
