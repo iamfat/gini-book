@@ -1,8 +1,8 @@
-# Summary
+# 摘要
 
-* [Overview](overview/README.md)
-   * [About Gini](overview/about_gini.md)
-* [Get Started](get_started/README.md)
+* [概述](overview/README.md)
+   * [关于 Gini](overview/about_gini.md)
+* [我是新手](get_started/README.md)
    * [Installation](get_started/installation.md)
    * [Configuration](get_started/configuration.md)
    * [Write The First App](get_started/write_first_app.md)
@@ -15,9 +15,9 @@
 * [RPC](api/README.md)
    * [JSON-RPC 2.0 over HTTP](api/json-rpc_20_over_http.md)
    * [Write an API](api/write_an_api.md)
-* [Testing](testing/README)
+* [测试](testing/README)
    * [PHPUnit](testing/phpunit.md)
-* [Deployment](deployment/README.md)
+* [部署](deployment/README.md)
    * [Gini Index](deployment/gini_index.md)
    * [Gini Composer Mirror](deployment/gini_composer_mirror.md)
 

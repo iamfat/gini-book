@@ -1,10 +1,9 @@
-# Write The First App
+# 书写你的第一个应用
 
-**Gini** is a __module-based framework__. Every Gini App is just a module in gini module directory, `$HOME/gini-modules` locally or `/usr/local/share/gini-modules` globally depends on your configuration (see [Installation](get-started/install.html)). Be sure to configure your shell environment before start.
+**Gini** 是一个 __基于模块组织的框架__. 每一个Gini App实际上只是一个最顶层的模块. 
 
-### Create an App
+### 建立一个应用
 ```bash
-$ cd $HOME/gini-modules
 $ mkdir sample
 $ cd sample
 $ gini init
@@ -15,7 +14,7 @@ Version [0.1]:
 Dependencies [N/A]:
 $ _
 ```
-It will generate `gini.json` in app directory according your input.
+这个操作会在这个`sample`的根目录生成一个 `gini.json`. 这个文件里面包括了你需要的所有模块信息
 ```json
 {
     "id": "sample",

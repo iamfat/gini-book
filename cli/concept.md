@@ -1,8 +1,8 @@
-# Concept
+# 概念
 
-All process started from `\Gini\Core::start()`. It will prepare autoloading mechanism, load config, set timezone, error reporting, etc. Then it will imports all dependent modules configured for your application in `gini.json` and sequentially run bootstrap methods in these modules.
+所有的进程都是从 `\Gini\Core::start()` 开始. 系统会准备自动加载机制，加载配置文件，设置时区，设置默认错误报警等等。然后会按照`gini.json`定义的依赖关系，依次加载模块。
 
-Every module may have their own bootstrap class with same name as the module shortname.
+每一个模块都可以有一个和模块同名的类, 用于实现模块的基本方法.
 ```php
 // path/to/mymodule/class/Gini/Module/MyModule.php
 
@@ -16,6 +16,11 @@ class MyModule {
 
     static function shutdown() {
         // run when each request finished
+    }
+    
+    static function diagnose() {
+        // run to check all things required for module
+        // will be called by `gini doctor`
     }
 
 }
