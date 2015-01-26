@@ -1,11 +1,12 @@
-# 摘要
+# Summary
 
+* [Introduction](README.md)
 * [概述](overview/README.md)
    * [关于 Gini](overview/about_gini.md)
 * [我是新手](get_started/README.md)
-   * [Installation](get_started/installation.md)
-   * [Configuration](get_started/configuration.md)
-   * [Write The First App](get_started/write_first_app.md)
+   * [安装](get_started/installation.md)
+   * [配置](get_started/configuration.md)
+   * [写第一个程序](get_started/write_first_app.md)
 * [CLI](cli/README.md)
    * [Concept](cli/concept.md)
    * [Write "Hello, world!"](cli/write_hello,_world.md)
