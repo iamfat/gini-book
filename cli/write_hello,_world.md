@@ -18,7 +18,16 @@ class Hello extends \Gini\Controller\CLI {
 
 **STEP 2:** Run it from command line!
 ```bash
-$ gini cache
-$ gini hello world
+# 初始化环境
+gini composer init -n
+composer update --prefer-dist
+gini cache
+gini config update
+# 开始运行
+gini hello world
+```
+
+你就会得到
+```bash
 Hello, world!
 ```

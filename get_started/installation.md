@@ -14,24 +14,24 @@ docker run --name gini-dev -d -p 9000:9000 genee/gini-dev
 ### 对系统环境的要求
 Gini 框架需要你的系统至少有:
 
-* PHP >= 5.4
+* PHP >= 5.5
 * PHP YAML 扩展
 
 
 ### 在当前的用户中使用 Gini
-1. Put following lines to `~/.profile`
+1. 在 `~/.profile` 中增加检索路径
 ```bash
 export PATH=$HOME/gini-modules/gini/bin:$PATH
 ```
 
 ### 在全局环境使用 Gini
-1. Deploy the build to `/usr/local/share/gini` and setup a place to put gini modules
+1. 把gini内核部署到 `/usr/local/share/gini`
 ```bash
 mkdir -p /usr/local/share/gini-modules
 git clone https://github.com/iamfat/gini /usr/local/share/gini-modules/gini
 ```
 
-2. Put following lines to `/etc/profile.d/gini.sh
+2. 将以下内容放到 `/etc/profile.d/gini.sh
 ```bash
 export PATH=/usr/local/share/gini/bin:$PATH
 ```
