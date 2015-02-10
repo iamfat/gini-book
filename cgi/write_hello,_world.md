@@ -15,7 +15,7 @@ class Hello extends \Gini\Controller\CGI {
 }
 ```
 
-**STEP 2:** Create corresponding view file `view/phtml/hello.phtml`
+**STEP 2:** Create corresponding view file `view/hello.phtml`
 ```html
 <h1>Hello, <?= $world ?>!</h1>
 ```
