@@ -33,8 +33,11 @@ $ gini web preview <host:port>    # default is localhost:3000
 ```php
 <?php
 $rest = new \Gini\REST('http://localhost:3000/rest');
-$response = $rest->hello->world();
+$response = $rest->get('article/1');
 echo $response; // "Hello, world!";
+
+$response = $rest->post('article', ['author'=>'libai', 'title'=>'jiangjinjiu', 'body'=>'balabala']);
+
 ```
 
 
