@@ -17,7 +17,6 @@ Please use phpcomposer.org as  `gini-satis.genee.cn` for composer packages inclu
 
 ```
 $ composer config -g repo.packagist composer https://packagist.phpcomposer.com
-$ composer install
 ```
 
 
