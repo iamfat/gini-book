@@ -6,7 +6,7 @@
 
 ```php
 <?php
-namespace Gini\Controller\CGI;
+namespace Gini\Controller\CGI\REST;
 
 class Hello extends \Controller\REST {
 
@@ -30,8 +30,8 @@ $ gini web preview <host:port>    # default is localhost:3000
 
 ```php
 <?php
-$rpc = new \Gini\RPC('http://localhost:3000/api');
-$response = $rpc->hello->world();
+$rest = new \Gini\REST('http://localhost:3000/rest');
+$response = $rest->hello->world();
 echo $response; // "Hello, world!";
 ```
 
