@@ -8,7 +8,9 @@
 <?php
 namespace Gini\Controller\CGI\REST;
 
-class Hello extends \Controller\REST {
+use \Gini\Controller\REST;
+
+class Hello extends REST {
 
     function getWorld() {
         return \Gini\CGI\Response\JSON(["hello"=>"world"]);
