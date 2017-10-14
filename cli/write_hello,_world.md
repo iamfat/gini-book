@@ -22,6 +22,7 @@ class Hello extends \Gini\Controller\CLI {
 gini composer init -f
 composer update
 gini install
+
 gini cache
 gini hello world
 ```
