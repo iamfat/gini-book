@@ -13,7 +13,7 @@ $ composer install
 
 ## Packagist.org is SO SLOW IN CHINA!!!
 
-Please use phpcomposer.org as  `gini-satis.genee.cn` for composer packages included in our `gini` modules so everyone in China could access them quickly.
+Please setup composer mirror to `packagist.phpcomposer.com` with following command.
 
 ```
 $ composer config -g repo.packagist composer https://packagist.phpcomposer.com
