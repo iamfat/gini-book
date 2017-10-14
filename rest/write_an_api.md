@@ -17,8 +17,8 @@ class Hello extends REST {
         return \Gini\CGI\Response\JSON(["hello"=>"world"]);
     }
 
-    // @rest(POST /hello/article/{id})
-    public function postArticle($id, $author, $title, $body) {
+    // @rest(POST /hello/article)
+    public function postArticle($author, $title, $body) {
         return \Gini\CGI\Response\JSON(["hello"=>"world"]);
     }
 
