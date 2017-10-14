@@ -6,21 +6,18 @@
 
 ```php
 <?php
-namespace Gini\Controller\CGI\REST;
 
-use \Gini\Controller\REST;
-
-class Hello extends REST {
-
-    public function getArticle($id) {
-        return \Gini\CGI\Response\JSON(["hello"=>"world"]);
+namespace Gini\Controller\CGI\REST {
+    use \Gini\Controller\REST;
+    class Hello extends REST {
+        public function getArticle($id) {
+            return \Gini\CGI\Response\JSON(["hello"=>"world"]);
+        }
+        public function postArticle($author, $title, $body) {
+            // return \Gini\CGI\Response\JSON(["message"=>"A.O."], 401);
+            return \Gini\CGI\Response\JSON(["hello"=>"world"]);
+        }
     }
-
-    public function postArticle($author, $title, $body) {
-        // return \Gini\CGI\Response\JSON(["message"=>"A.O."], 401);
-        return \Gini\CGI\Response\JSON(["hello"=>"world"]);
-    }
-
 }
 ```
 

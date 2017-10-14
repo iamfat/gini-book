@@ -16,13 +16,11 @@
 * [RPC](api/README.md)
   * [JSON-RPC 2.0 over HTTP](api/json-rpc_20_over_http.md)
   * [编写一个API](api/write_an_api.md)
-* REST
-  * 编写一个REST API
+* [REST](rest.md)
+  * [编写一个REST API](bian-xie-yi-ge-rest-api.md)
 * [测试](testing/README)
   * [PHPUnit](testing/phpunit.md)
 * [部署](deployment/README.md)
   * [Gini Index](deployment/gini_index.md)
   * [Gini Composer Mirror](deployment/gini_composer_mirror.md)
-
-
 
