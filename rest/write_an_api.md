@@ -12,9 +12,11 @@ use \Gini\Controller\REST;
 
 class Hello extends REST {
 
-    function getWorld() {
+    public function getArticle($id) {
         return \Gini\CGI\Response\JSON(["hello"=>"world"]);
     }
+
+    public function post
 
 }
 ```
@@ -32,10 +34,10 @@ $ gini web preview <host:port>    # default is localhost:3000
 ```php
 <?php
 $rest = new \Gini\REST('http://localhost:3000/rest');
-$response = $rest->get('article/1');
+$response = $rest->get('hello/article/1');
 echo $response; // "Hello, world!";
 
-$response = $rest->post('article', ['author'=>'libai', 'title'=>'jiangjinjiu', 'body'=>'balabala']);
+$response = $rest->post('hello/article', ['author'=>'libai', 'title'=>'jiangjinjiu', 'body'=>'balabala']);
 ```
 
 
