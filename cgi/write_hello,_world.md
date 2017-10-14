@@ -25,7 +25,6 @@ class Hello extends \Gini\Controller\CGI {
 **STEP 3:** Update web directory and start a PHP development server
 
 ```bash
-# 初始化环境
 gini composer init -f
 composer update
 gini cache
