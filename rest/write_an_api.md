@@ -12,12 +12,12 @@ use \Gini\Controller\REST;
 
 class Hello extends REST {
 
-    // @rest(GET /hello/article/{id})
+    // @route(GET /hello/article/{id})
     public function getArticle($id) {
         return \Gini\CGI\Response\JSON(["hello"=>"world"]);
     }
 
-    // @rest(POST /hello/article)
+    // @route(POST /hello/article)
     public function postArticle($author, $title, $body) {
         // throw new \Gini\CGI\Response\Error\JSON(401);
         return \Gini\CGI\Response\JSON(["hello"=>"world"]);
