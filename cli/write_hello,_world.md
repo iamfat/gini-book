@@ -22,6 +22,7 @@ class Hello extends \Gini\Controller\CLI {
 # 初始化环境
 gini composer init -f
 composer update
+gini install
 gini cache
 # 开始运行
 gini hello world
