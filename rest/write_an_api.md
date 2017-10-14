@@ -19,7 +19,7 @@ class Hello extends REST {
 }
 ```
 
-**STEP 2:** Run a test server
+**STEP 2:** 运行测试服务器
 
 ```bash
 $ gini cache
@@ -27,7 +27,7 @@ $ gini web update
 $ gini web preview <host:port>    # default is localhost:3000
 ```
 
-**STEP3:** Call it from another program
+**STEP3:** 从另外的Gini模块进行调用
 
 ```php
 <?php
