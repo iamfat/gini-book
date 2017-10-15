@@ -25,7 +25,9 @@ class MyModule {
 }
 ```
 
-这些入口类里面的静态方法 `setup` 会按照模块依赖顺序依次被执行。所有入口`setup`代码被执行完毕后 ，应用完成初始化，进入正式的请求主程序。在CGI请求中，Gini会自动根据HTTP请求情况定位CGI controller。在一般的PHP框架中, 会首先根据HTTP请求进行routing操作，然后再分发，这部分请阅读[请求路由](/cgi/routing.md)。Gini框架自动设置了一套类似Kohana的路由分发标准，将路径与PHP自动加载路径完全对应，不损失性能的直接定位到函数入口:
+这些入口类里面的静态方法 `setup` 会按照模块依赖顺序依次被执行。所有入口`setup`代码被执行完毕后 ，应用完成初始化，进入正式的请求主程序。
+
+在CGI请求中，Gini会自动根据HTTP请求情况定位CGI controller。在一般的PHP框架中, 会首先根据HTTP请求进行routing操作，然后再分发，这部分请阅读[请求路由](/cgi/routing.md)。Gini框架自动设置了一套类似Kohana的路由分发标准，将路径与PHP自动加载路径完全对应，不损失性能的直接定位到函数入口:
 
 ```
 /hello/world  =>
