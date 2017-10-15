@@ -25,7 +25,17 @@ $router->get('nested/to', function($router) {
 
 ## 有名变量自适应
 
-使用 
+使用请求路由后有一个优点是，如果在路由中使用了`{var}`形式的变量, 系统在调用Controller相应action的时候，会通过反射机制自动解析代码中的变量名称，对变量进行赋值，而不受顺序影响。
+
+```php
+$router->get('user/{uid}/comment/{comment}', 'REST\\Hello@postComment');
+
+class Hello extends REST {
+    public function postComment($comment, $uid) {
+        // 在这样的参数顺序中, 系统扔能确保传入数据正常
+    }
+}
+```
 
 
 
