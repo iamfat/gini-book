@@ -24,6 +24,7 @@
 * [部署](deployment/README.md)
   * [Gini Index](deployment/gini_index.md)
   * [Gini Composer Mirror](deployment/gini_composer_mirror.md)
+* [其他模块](/misc/README.md)
 
 
 
