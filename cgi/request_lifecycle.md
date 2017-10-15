@@ -25,7 +25,7 @@ class MyModule {
 }
 ```
 
-The static `setup` methods in these class will be called sequentially according the order of module dependencies. After all modules have been set up, your app will be loaded. In a CGI request, Gini will automatically call corresponding CGI controller by parse your request path:
+这些入口类里面的静态方法 `setup` 会按照模块依赖顺序依次被执行。所有入口`setup`代码被执行完毕后 ，应用完成初始化，进入正式的请求主程序。在CGI请求中，Gini会自动根据HTTP请求情况定位CGI controller。在一般的PHP框架中, 会首先根据HTTP请求进行routing操作，然后再分发，这部分请阅读[/cgi/routing.md](/cgi/routing.md "这里")in these class will be called sequentially according the order of module dependencies. After all modules have been set up, your app will be loaded. In a CGI request, Gini will automatically call corresponding CGI controller by parse your request path:
 
 ```
 /hello/world  =>
