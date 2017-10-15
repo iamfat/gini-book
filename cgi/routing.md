@@ -23,5 +23,9 @@ $router->get('nested/to', function($router) {
 });
 ```
 
+## 有名变量自适应
+
+使用 
+
 
 
