@@ -12,7 +12,7 @@
 
 ### debade 消息队列抽象层
 
-### oauth
+### oauth OAuth 2.0客户端及服务端库
 
 ### locale 区域设置助手库
 
