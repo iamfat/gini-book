@@ -10,7 +10,7 @@
 
 ### cache 缓冲抽象层
 
-### debade
+### debade 消息队列抽象层
 
 ### oauth
 
