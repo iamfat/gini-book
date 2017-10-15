@@ -16,13 +16,13 @@
 
 ### locale
 
-### auth
+### auth 身份验证抽象层
 
-### ldap
+### ldap LDAP操作库
 
-### image
+### image 图像操作库
 
-### cipher
+### cipher 加密封装库
 
 
 
