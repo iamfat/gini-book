@@ -1,22 +1,24 @@
-# Request Lifecycle
+# 请求的声明周期
 
-All requests into your application are directed through the `web/index.php` script. From here, **Gini** begins the process of handling the requests and returning a response to the client.
+所有进入应用的请求都会经过 `web/index.php` 脚本进行分发. 从这个点, **Gini** 开始对请求的相应并把回应返回给客户端。
 
-All process started from `\Gini\Core::start()`. It will prepare autoloading mechanism, load config, set timezone, error reporting, etc. Then it will imports all dependent modules configured for your application in `gini.json` and sequentially run bootstrap methods in these modules.
+每一个请求的开始函数是 `\Gini\Core::start()`. 这个内核加载函数会准备自动加载机制, 加载配置, 设置时区, 设置错误处理等工作。接着他会按照`gini.json`定义的各个Gini模块的依赖顺序加载。
 
-Every module may have their own bootstrap class with same name as the module shortname.
+每一个模块都可以在各自的`class/Gini/Module/<MODULE_NAME>.php`配置自己的模块入口相关代码。
+
 ```php
-// path/to/mymodule/class/Gini/Module/MyModule.php
+// 如果模块目录叫 my-module, 或者在 gini.json 定义的 id: my-module
+// 入口会是是 class/Gini/Module/MyModule.php
 
 namespace Gini\Module;
 
 class MyModule {
 
-    static function setup() {
+    public static function setup() {
         // run when each request started
     }
 
-    static function shutdown() {
+    public static function shutdown() {
         // run when each request finished
     }
 
