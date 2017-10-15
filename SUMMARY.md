@@ -10,6 +10,7 @@
 * [CLI](cli/README.md)
   * [概念](cli/concept.md)
   * [编写 "Hello, world!"](cli/write_hello,_world.md)
+  * [请求路由](/cgi/routing.md)
 * [CGI](cgi/README.md)
   * [请求的生命周期](cgi/request_lifecycle.md)
   * [编写 "Hello, world!"](cgi/write_hello,_world.md)
