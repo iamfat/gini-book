@@ -10,7 +10,7 @@ gini ci phpunit init
 然后你可以使用 `gini ci phpunit create` 命令来建立指定名称的测试
 
 ```bash
-gini ci phpunit create 'Hello\World'
+gini ci phpunit create 'Hello\\World'
 # 这会生成 test/unit/Hello/World.php 文件
 ```
 
@@ -31,3 +31,6 @@ class World extends \Gini\PHPUnit\CLI {
 
 }
 ```
+
+
+
