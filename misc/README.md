@@ -14,7 +14,7 @@
 
 ### oauth
 
-### locale
+### locale 区域设置助手库
 
 ### auth 身份验证抽象层
 
