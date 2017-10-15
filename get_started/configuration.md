@@ -45,7 +45,23 @@ GINI_ENV=development gini config update
 gini cache
 ```
 
-# 环境变量配置 
+# 环境变量配置
 
 您可以在代码中使用 `${PLACEHOLDER`这种方式设置变量，然后在顶层应用通过设置`.env`文件进行设置来达到类似的效果
+
+```yml
+default:
+  dsn: mysql:dbname=${DBNAME};host=${DBHOST}
+  username: ${DBUSER}
+```
+
+然后在 `APP_PATH/.env`录入
+
+```bash
+DBNAME=test
+DBHOST=localhost
+DBUSER=genee
+```
+
+执行执行`gini cache`后，相应配置会自动替换。
 
