@@ -25,7 +25,7 @@ class MyModule {
 }
 ```
 
-这些入口类里面的静态方法 `setup` 会按照模块依赖顺序依次被执行。所有入口`setup`代码被执行完毕后 ，应用完成初始化，进入正式的请求主程序。在CGI请求中，Gini会自动根据HTTP请求情况定位CGI controller。在一般的PHP框架中, 会首先根据HTTP请求进行routing操作，然后再分发，这部分请阅读[/cgi/routing.md](/cgi/routing.md "这里")in these class will be called sequentially according the order of module dependencies. After all modules have been set up, your app will be loaded. In a CGI request, Gini will automatically call corresponding CGI controller by parse your request path:
+这些入口类里面的静态方法 `setup` 会按照模块依赖顺序依次被执行。所有入口`setup`代码被执行完毕后 ，应用完成初始化，进入正式的请求主程序。在CGI请求中，Gini会自动根据HTTP请求情况定位CGI controller。在一般的PHP框架中, 会首先根据HTTP请求进行routing操作，然后再分发，这部分请阅读[请求路由](/cgi/routing.md)。Gini框架自动设置了一套类似Kohana的路由分发标准，将路径与PHP自动加载路径完全对应，不损失性能的直接定位到函数入口:
 
 ```
 /hello/world  =>
@@ -35,5 +35,5 @@ class MyModule {
     \Gini\Controller\CGI\Index::__index($hello, $world)
 ```
 
-After the action was called, an response will be return and sent back to client. After that, `shutdown` methods in all modules will be called.
+相应的请求被触发之后，回应会返回到客户端。之后系统会按照依赖次序反序依次调用所有模块入口的`shutdown`方法。至此完成所有请求。
 
