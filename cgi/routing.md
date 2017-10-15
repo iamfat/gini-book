@@ -37,5 +37,14 @@ class Hello extends REST {
 }
 ```
 
+## 随时设置
+
+您可以随时通过 `\Gini\CGI::router()`获得全局路由从而通过`get`，`post`，`put`，`delete`，`options`，`any`等方法进行配置。
+
+```php
+$router = \Gini\CGI::router();
+$router and $router->get('hello/world', 'Hello@actionWorld');
+```
+
 
 
