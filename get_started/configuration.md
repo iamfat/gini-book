@@ -47,9 +47,9 @@ gini cache
 
 # 环境变量配置
 
-您可以在代码中使用 `${PLACEHOLDER`这种方式设置变量，然后在顶层应用通过设置`.env`文件进行设置来达到类似的效果
+您可以在代码中使用 `${PLACEHOLDER}`这种方式设置变量，然后在顶层应用通过设置`.env`文件进行设置来达到类似的效果
 
-```yml
+```yaml
 default:
   dsn: mysql:dbname=${DBNAME};host=${DBHOST}
   username: ${DBUSER}
@@ -64,4 +64,15 @@ DBUSER=genee
 ```
 
 执行执行`gini cache`后，相应配置会自动替换。
+
+另外，为了避免默认值不存在影响系统运行，系统支持类似`bash`一样的默认变量设置：
+
+```yaml
+default:
+  dsn: mysql:dbname=${DBNAME:="abc"};host=${DBHOST:="127.0.0.1"}
+```
+
+
+
+
 
