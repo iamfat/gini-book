@@ -18,7 +18,7 @@
   * [编写一个API](api/write_an_api.md)
 * [REST](/rest/README.md)
   * [编写一个REST API](/rest/write_an_api.md)
-* [测试](testing/README)
+* [测试](/testing/README.md)
   * [PHPUnit](testing/phpunit.md)
 * [部署](deployment/README.md)
   * [Gini Index](deployment/gini_index.md)
