@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [简介](/overview/about_gini.md)
 * [概述](overview/README.md)
   * [关于 Gini](overview/about_gini.md)
 * [我是新手](get_started/README.md)
