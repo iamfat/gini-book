@@ -4,7 +4,7 @@
 
 ```bash
 gini ci phpunit init
-# 这会生成ci/test目录
+# 这会生成ci/test目录和phpunit.xml.dist
 ```
 
 然后你可以使用 `gini ci phpunit create` 命令来建立指定名称的测试
