@@ -12,7 +12,7 @@
 
 namespace Gini\Module;
 
-class MyModule {
+class MyModule extends Prototype {
 
     public static function setup() {
         // run when each request started
