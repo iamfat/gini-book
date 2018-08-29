@@ -2,7 +2,7 @@
 
 **Gini** 是一个基于松散模块依赖的MVC PHP框架，深受Kohana, Symphony和Composer的影响。
 
-[点击这里进入GitBook阅读](http://iamfat.gitbooks.io/gini-book/)
+[点击这里进入GitBook阅读](./SUMMARY.md)
 
 ## 易用的CLI
 
